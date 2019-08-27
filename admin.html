@@ -1,0 +1,74 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="adminCatalog.js"></script>
+<script src="enlargeImage.js"></script>
+	<title>Watches</title>
+	<style type="text/css"></style></head>
+	<body onload="availableProducts();">
+	
+		<div style="background-color:#B0C4DE;" id = "topbar">
+			<center><h1><a href = "index.html">Watch Catalog</a>
+
+			</h1>
+			</center>
+		</div>
+		
+		<hr>
+
+		<div id = "search">
+			<form name="newUser" id="newUser">	
+				<input type="text" name="searchText" maxlength = "250" size="35"><br>
+			</form>
+			<button type="submit" onclick="searchProducts();">Search</button>
+		</div>		
+		
+		
+		<div id = "block_container"></div>
+		
+		<div id="largeImgPanel" onclick="hideMe(this);">
+			<img id="largeImg" style="height: 100%; margin: 0; padding: 0;" />
+		</div>
+		
+		
+		<div id = "administratorForms">
+			<div id = "aForm">
+				<form name="addForm" id="addForm">
+					Add a Product to the database
+					<br>
+					<input type="text" id="prodName" name="name" placeholder="Name" required=""> <br>
+					<input type="text" id="prodComp" name="company" placeholder="Company" required=""> <br>
+					<input type="text" id="prodModel" name="model" placeholder="Model" required=""> <br>
+					<input type="text" id="prodPrice" name="price" placeholder="Price" required=""> <br>
+					<input type="text" id="prodPic" name="picture" placeholder="Path (ex: watch_jpgs/pic.jpg)" required=""> <br>
+					<input type="text" id="prodCategory" name="category" placeholder="Category" required=""> <br>
+					<input type="text" id="prodSpecial" name="special" placeholder="Special" required=""> <br>
+				</form>
+				<button type="submit" id = "afbutton" onclick="addElements();">Add</button>
+			</div>
+			<div id = "mForm">	
+				<form name="modForm" id="modForm">
+					Modify a Product to the database
+					<br>
+					<input type="text" id="prodid" name="pid" placeholder="pid" required=""> <br>
+					<input type="text" id="prodName" name="name" placeholder="Name" required=""> <br>
+					<input type="text" id="prodComp" name="company" placeholder="Company" required=""> <br>
+					<input type="text" id="prodModel" name="model" placeholder="Model" required=""> <br>
+					<input type="text" id="prodPrice" name="price" placeholder="Price" required=""> <br>
+					<input type="text" id="prodPic" name="picture" placeholder="Path (ex: watch_jpgs/pic.jpg)" required=""> <br>
+					<input type="text" id="prodCategory" name="category" placeholder="Category" required=""> <br>
+					<input type="text" id="prodSpecial" name="special" placeholder="Special" required=""> <br>
+				</form>
+				<button type="submit" id = "mfbutton" onclick="modifyElements();">Modify</button>
+			</div>
+		<div>
+		
+		
+		
+		
+		
+	</body>
+</html>
+
+
+

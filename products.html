@@ -1,0 +1,48 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="userCatalog.js"></script>
+<script src="enlargeImage.js"></script>
+<title>Products</title>
+<style type="text/css"></style></head>	
+
+	
+	<body onload="dailyUpdate();">
+	
+	
+	
+		<div style="background-color:#B0C4DE;" id = "topbar">
+			<center><h1><a href = "products.html">Watch Catalog</a>
+				<div id = "logout">
+					<a href="index.html">Logout</a>
+				</div>
+				<div id = "cart">
+					<a href="cart.html">Check Cart</a>
+				</div>
+			</h1>
+			</center>
+		</div>
+		
+		
+		
+		
+		<hr>
+
+
+
+		<div id = "search">
+			<form name="newUser" id="newUser">	
+				<input type="text" name="searchText" maxlength = "250" size="35"><br>
+			</form>
+			<button type="submit" onclick="searchProducts();">Search</button>
+		</div>		
+
+		<div id = "block_container"></div>
+		
+		<div id="largeImgPanel" onclick="hideMe(this);">
+			<img id="largeImg" style="height: 100%; margin: 0; padding: 0;" />
+		</div>
+		
+		
+	</body>
+</html>

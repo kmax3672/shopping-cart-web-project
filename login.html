@@ -1,0 +1,51 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="loginUser.js"></script>
+	<title>Watches</title>
+	<style type="text/css"></style></head>
+	<body>
+	
+		<div style="background-color:#B0C4DE;" id = "logBar">
+			<center><h1><a href = "index.html">Watch Catalog</a>
+
+			</h1>
+			</center>
+		</div>
+		
+		<hr>
+		
+			<fieldset style="width:250px" align="center">
+				<legend> New User: </legend>
+					<form name="newUser" id="newUser">	
+						<input type="text" name="email" placeholder="Email Address" required=""><br>
+						<input type="text" name="username" placeholder="Username" required=""><br>
+						<input type="password" name="pwd" placeholder="New Password" required=""><br>
+					</form>
+				<button type="submit" onclick="addUser();">Log in</button>
+			</fieldset>
+			
+			<fieldset style="width:250px" align="center">
+				<legend> User login: </legend>
+					<form name="login" id="login">
+						<input type="text" id="name" name="namei" placeholder="Username" required=""><br>
+						<input type="password" name="pwd" placeholder="Password" required=""><br>
+					</form>
+				<button type="submit" onclick="userLogin();">Log in</button>
+			</fieldset>
+			
+			<fieldset style="width:250px" align="center">
+				<legend> Admin Login: </legend>	
+					<form name="adminLogin" id="adminLogin">
+						<input type="text" id="name" name="namei" placeholder="Username" required=""><br>
+						<input type="password" name="pwd" placeholder="Password" required=""><br>
+					</form>
+				<button type="submit" onclick="loginAdmin();">Log in</button>
+			</fieldset>
+			
+			
+			<hr>
+
+
+	</body>
+</html>
